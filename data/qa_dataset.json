@@ -1,0 +1,92 @@
+[
+  {
+    "question": "What is a token in the context of large language models?",
+    "answer": "A token is a small chunk of text (a word, part of a word, or a punctuation mark) that a language model reads and generates one piece at a time. Models don't process raw text directly; they process sequences of tokens.",
+    "category": "Tokens",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is an embedding?",
+    "answer": "An embedding is a list of numbers (a vector) that represents the meaning of a piece of text. Texts with similar meaning end up with vectors that are close to each other in that numeric space, which lets computers compare meaning mathematically.",
+    "category": "Embeddings",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does RAG stand for and what problem does it solve?",
+    "answer": "RAG stands for Retrieval-Augmented Generation. It solves the problem of language models not knowing private or very recent information by first retrieving relevant documents from an external source and then giving those documents to the model as context before it generates an answer.",
+    "category": "RAG",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is prompt engineering?",
+    "answer": "Prompt engineering is the practice of carefully writing and structuring the instructions (the prompt) given to a language model so that it produces better, more reliable, and more relevant outputs.",
+    "category": "Prompt Engineering",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the difference between fine-tuning and prompt engineering?",
+    "answer": "Fine-tuning changes the model itself by further training it on new examples so it permanently learns new behavior. Prompt engineering does not change the model at all; it only changes the instructions given at the moment of use to guide the existing model's behavior.",
+    "category": "Fine-tuning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does the temperature parameter control when generating text with an LLM?",
+    "answer": "Temperature controls how random or predictable the model's output is. A low temperature (close to 0) makes the model choose the most likely next word almost every time, producing more focused and repeatable answers. A high temperature makes the model take more risks and produce more varied, creative answers.",
+    "category": "Temperature",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a hallucination in the context of language models?",
+    "answer": "A hallucination is when a language model generates information that sounds confident and fluent but is actually false, made up, or not supported by any real source.",
+    "category": "Hallucination",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is a vector database used for?",
+    "answer": "A vector database stores embeddings (numeric representations of text, images, or other data) and is optimized to quickly find the vectors that are most similar to a given query vector. This is commonly used to power semantic search and RAG systems.",
+    "category": "Vector Databases",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is few-shot learning in the context of prompting an LLM?",
+    "answer": "Few-shot learning (in prompting) means including a small number of example input-output pairs directly inside the prompt so the model can learn the desired pattern or format just from those examples, without any retraining.",
+    "category": "Few-shot learning",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is chain-of-thought prompting?",
+    "answer": "Chain-of-thought prompting is a technique where the model is encouraged to write out its intermediate reasoning steps before giving a final answer, which often improves accuracy on tasks that require multi-step reasoning, like math or logic problems.",
+    "category": "Chain-of-thought",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a system prompt?",
+    "answer": "A system prompt is a special instruction given to a language model before the user's messages that sets its role, tone, rules, and overall behavior for the rest of the conversation.",
+    "category": "System prompt",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the context window of a language model?",
+    "answer": "The context window is the maximum amount of text (measured in tokens) that a language model can consider at one time, including the prompt, any retrieved documents, and the conversation history. Anything beyond that limit gets cut off or ignored.",
+    "category": "Context window",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is an AI agent, in simple terms?",
+    "answer": "An AI agent is a system built around a language model that can decide which actions to take (such as calling tools, searching the web, or running code), observe the results, and repeat this process in a loop to accomplish a goal, instead of just answering in one single step.",
+    "category": "Agents",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is LangSmith used for?",
+    "answer": "LangSmith is a platform for tracing, testing, and evaluating applications built with language models. It lets developers log every step an LLM application takes, create datasets of test cases, run evaluations against those datasets, and compare results across different experiments.",
+    "category": "LangSmith",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Why is it useful to evaluate an LLM application against a custom dataset instead of only trying it manually?",
+    "answer": "A custom dataset lets you test the application consistently against a fixed set of realistic examples every time you make a change, so you can measure whether the change actually improved or hurt performance, instead of relying on a few manual, one-off checks that are hard to compare over time.",
+    "category": "Evaluation",
+    "difficulty": "hard"
+  }
+]
